@@ -1,0 +1,24 @@
+<html>
+<head>
+<!--<meta charset="1251">-->
+<script src="library.js"></script> <!-- подключить библиотеку JavaScript-->
+</head>
+<body>
+<p>Это абзац HTML</p>
+<script>
+  // Это некоторый программный код на клиентском JavaScript,
+  // встроенный непосредственно в HTML-файл
+  //<script>
+  function moveon() {
+    // Вывести модальный диалог, чтобы получить ответ пользователя
+    answer = confirm("Ready to move on?")
+    // Если пользователь щелкнул на кнопке "OK", заставить броузер загрузить новую страницу
+    if (answer) window.location = "http://google.com"
+  }
+  // Запустить функцию, объявленную выше, через 1 минуту (60000 миллисекунд).
+  setTimeout(moveon, 60000)
+  //</script>
+</script>
+<p>Далее опять следует разметка HTML.</p>
+</body>
+</html>
